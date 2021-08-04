@@ -8,6 +8,10 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ['Inter',  ...defaultTheme.fontFamily.sans]
+      },
+      rotate: {
+        '270': '270deg',
+        '360': '360deg',
       }
     },
   },
