@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Link from 'next/link'
+import Link from "next/link";
 
 import NavLink from "components/NavLink";
 import Icon from "components/Icon";
@@ -8,8 +8,6 @@ function Header() {
   const [navState, setNavState] = useState(false);
   const handleToggler = (e) => {
     e.preventDefault();
-
-    console.log(navState);
     setNavState(!navState);
   };
   return (

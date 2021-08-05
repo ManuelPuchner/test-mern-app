@@ -1,10 +1,10 @@
-import Link from 'next/link'
+import Link from "next/link";
 
-
-function NavLink({children, href}) {
+function NavLink({ children, href }) {
   return (
     <Link href={href}>
-      <a className="
+      <a
+        className="
         block my-4
         border-b-2
         hover:border-gray-900
@@ -14,11 +14,12 @@ function NavLink({children, href}) {
 
         md:mx-1
         md:leading-8
-      ">
-        { children }
+      "
+      >
+        {children}
       </a>
     </Link>
-  )
+  );
 }
 
-export default NavLink
+export default NavLink;

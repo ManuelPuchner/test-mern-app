@@ -1,15 +1,13 @@
-import Head from 'next/head'
+import Head from "next/head";
 
-import Layout from 'components/Layout'
+import Layout from "components/Layout";
 export default function Home() {
   return (
     <>
       <Head>
         <title>ShopApp</title>
       </Head>
-      <Layout>
-        
-      </Layout>
+      <Layout></Layout>
     </>
-  )
+  );
 }

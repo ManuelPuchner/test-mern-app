@@ -12,6 +12,9 @@ module.exports = {
       rotate: {
         '270': '270deg',
         '360': '360deg',
+      },
+      gridTemplateRows: {
+        'main': 'auto 1fr auto' 
       }
     },
   },
