@@ -29,9 +29,9 @@ function Header() {
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="
-            h-6 w-6 p-1
-            transform hover:rotate-360 focus:rotate-360 transition duration-300
-          "
+                h-6 w-6 p-1
+                transform hover:rotate-360 focus:rotate-360 transition duration-300
+              "
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
