@@ -3,12 +3,20 @@ function Footer() {
     <div
       className="
       w-full
-      bg-gradient-to-l to-yellow-400 via-red-500 from-pink-500
+      bg-gradient-to-r from-red-500 via-pink-500 to-blue-800
       rounded-t-lg
       p-3
     "
     >
-      Follow Our Newsletter
+      Photos provided by{" "}
+      <a
+        href="https://unsplash.com"
+        target="_blank"
+        rel="noreferrer"
+        className="underline"
+      >
+        unsplash.com
+      </a>
     </div>
   );
 }

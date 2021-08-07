@@ -1,13 +1,19 @@
 import Head from "next/head";
 
 import Layout from "components/Layout";
+
+// sections
+import Showcase from "sections/Showcase";
+
 export default function Home() {
   return (
     <>
       <Head>
-        <title>ShopApp</title>
+        <title>PartyLocate</title>
       </Head>
-      <Layout></Layout>
+      <Layout>
+        <Showcase />
+      </Layout>
     </>
   );
 }

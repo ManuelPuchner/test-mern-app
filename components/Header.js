@@ -20,16 +20,16 @@ function Header() {
       select-none
 
       md:px-6
-      md:bg-gradient-to-l from-yellow-400 via-red-500 to-pink-500
+      md:bg-gradient-to-l from-red-500 via-pink-500 to-blue-800
     "
     >
-      <Link href="/cart">
+      <Link href="/parties">
         <a className="md:hidden">
-          <Icon className="h-10 w-10 m-3 rounded-md bg-yellow-400">
+          <Icon className="h-10 w-10 m-3 rounded-md bg-blue-800">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="
-                h-6 w-6 p-1
+                p-1
                 transform hover:rotate-360 focus:rotate-360 transition duration-300
               "
               fill="none"
@@ -40,22 +40,22 @@ function Header() {
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 strokeWidth={2}
-                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                d="M21 15.546c-.523 0-1.046.151-1.5.454a2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.701 2.701 0 00-1.5-.454M9 6v2m3-2v2m3-2v2M9 3h.01M12 3h.01M15 3h.01M21 21v-7a2 2 0 00-2-2H5a2 2 0 00-2 2v7h18zm-3-9v-2a2 2 0 00-2-2H8a2 2 0 00-2 2v2h12z"
               />
             </svg>
           </Icon>
         </a>
       </Link>
 
-      <div className="branding text-xl self-center">
-        <h1>ShopApp</h1>
+      <div className="branding text-xl self-center font-bold tracking-widest">
+        <h1>PartyLocate</h1>
       </div>
       <nav
         className={`
         fixed transform 
         ${navState ? "-translate-x-0" : "-translate-x-full"}
         transition duration-300 ease-out h-full w-full
-        bg-gradient-to-b from-yellow-400 via-red-500 to-pink-500
+        bg-gradient-to-b from-red-500 via-pink-500 to-blue-800
         flex items-center justify-center
         z-10
 
@@ -71,26 +71,8 @@ function Header() {
         <div className="links text-center text-xl md:flex">
           <NavLink href="/">Home</NavLink>
           <NavLink href="/about">About</NavLink>
-          <NavLink href="/products">Products</NavLink>
-          <NavLink href="/cart">
-            {/* cart icon */}
-            <Icon className="h-8 w-8 block mx-auto md:ml-3">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6 "
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
-                />
-              </svg>
-            </Icon>
-          </NavLink>
+          <NavLink href="/parties">Parties</NavLink>
+          <NavLink href="/friends">Friends</NavLink>
         </div>
 
         <div

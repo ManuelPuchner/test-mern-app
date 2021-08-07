@@ -1,0 +1,5 @@
+.customImage img {
+  width: initial !important;
+  min-width: initial !important;
+  object-fit: initial !important;
+}
