@@ -22,7 +22,6 @@ function Showcase() {
           <p>PartyLocate is an app for people like you.</p>
           <p>Share your party location to friends</p>
           <p>or others to create an awesome party</p>
-          <p>test moin</p>
 
           <div className="cta flex text-center mt-2">
             <button
