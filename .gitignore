@@ -3,6 +3,8 @@
 
 pullscript
 startpullscript
+stoppullscript
+nohup.out
 
 # dependencies
 /node_modules
