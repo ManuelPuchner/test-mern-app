@@ -3,6 +3,7 @@
 
 pullscript
 startpullscript
+stoppullscript
 nohup.out
 
 # dependencies
