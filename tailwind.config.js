@@ -1,4 +1,4 @@
-const defaultTheme = require('tailwindcss/defaultTheme')
+const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
   // purge: [],
@@ -7,19 +7,24 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Inter',  ...defaultTheme.fontFamily.sans]
+        sans: ["Inter", ...defaultTheme.fontFamily.sans],
       },
       rotate: {
-        '270': '270deg',
-        '360': '360deg',
+        270: "270deg",
+        360: "360deg",
       },
       gridTemplateRows: {
-        'main': 'auto 1fr auto' 
-      }
+        main: "auto 1fr auto",
+      },
+      borderWidth: {
+        6: "6px",
+      },
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      animation: ["hover", "group-hover"],
+    },
   },
   plugins: [],
 };

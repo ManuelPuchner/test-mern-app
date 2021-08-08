@@ -2,32 +2,8 @@ import Link from "next/link";
 
 import Layout from "components/Layout";
 
-function Error({ statusCode }) {
-  const renderMessage = () => {
-    /**
-     * status code responses are not fully completed
-     * @todo complete status codes
-     */
-    var message = "This means ";
-    switch (statusCode) {
-      // client side
-      case 404:
-        message +=
-          "the requested site was not found. Maybe you entered the wrong url?";
-        break;
-      case 401:
-        message += "you are not authorized to access this page.";
-        break;
-
-      // server side
-      case 500:
-        message += "that an error happened on our server.";
-        break;
-      default:
-        message = ""
-    }
-    return message;
-  };
+function Error() {
+  
   return (
     <Layout>
       <div className="text-center mx-3">
@@ -38,10 +14,10 @@ function Error({ statusCode }) {
         <div className="px-5">
           <h2 className="text-base mt-8">
             <span className="text-lg font-semibold">
-              The server responded with a status code of {statusCode}{" "}
+              The server responded with a status code of {404}{" "}
             </span>
             <br />
-            {renderMessage()}
+            This means the requested site was not found. Maybe you entered the wrong url?
           </h2>
 
           <div className="flex mt-6 text-left">
@@ -61,8 +37,4 @@ function Error({ statusCode }) {
     </Layout>
   );
 }
-Error.getInitialProps = ({ res, err }) => {
-  const statusCode = res ? res.statusCode : err ? err.statusCode : 404;
-  return { statusCode };
-};
 export default Error;

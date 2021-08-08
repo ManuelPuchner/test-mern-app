@@ -11,7 +11,7 @@ export default function Home() {
       <Head>
         <title>PartyLocate</title>
       </Head>
-      <Layout>
+      <Layout isHomepage>
         <Showcase />
       </Layout>
     </>

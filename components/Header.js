@@ -4,7 +4,7 @@ import Link from "next/link";
 import NavLink from "components/NavLink";
 import Icon from "components/Icon";
 
-function Header() {
+function Header({isHomepage}) {
   const [navState, setNavState] = useState(false);
   const handleToggler = (e) => {
     e.preventDefault();
@@ -12,16 +12,17 @@ function Header() {
   };
   return (
     <header
-      className="
+      className={`
       flex
       justify-between
       w-full
       relative
       select-none
+      ${isHomepage ? "text-white" : null}
 
       md:px-6
       md:bg-gradient-to-l from-red-500 via-pink-500 to-blue-800
-    "
+    `}
     >
       <Link href="/parties">
         <a className="md:hidden">
@@ -30,7 +31,7 @@ function Header() {
               xmlns="http://www.w3.org/2000/svg"
               className="
                 p-1
-                transform hover:rotate-360 focus:rotate-360 transition duration-300
+                hover:animate-pulse
               "
               fill="none"
               viewBox="0 0 24 24"
