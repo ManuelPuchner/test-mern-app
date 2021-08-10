@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { useEffect } from "react";
 
-import styles from "./CustomImage.module.css";
+import styles from "styles/CustomImage.module.css";
 
 function CustomImage({ src, alt, className }) {
   return (

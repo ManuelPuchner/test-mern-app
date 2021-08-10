@@ -1,11 +1,12 @@
 import CustomImage from "components/CustomImage";
 
-import styles from "./Showcase.module.css";
+import styles from "styles/Showcase.module.css";
 function Showcase() {
   return (
     <div
       className={`
         showcase ${styles.showcase}
+        bg-black
       `}
     >
       <div
@@ -15,50 +16,73 @@ function Showcase() {
         "
         style={{ flexDirection: "column" }}
       >
-        <h1 className="text-center text-3xl font-bold tracking-wide mb-3">
+        <h1
+          className="
+            text-center text-3xl font-bold tracking-wide mb-3
+            md:text-4xl
+            lg:text-5xl
+          "
+        >
           Tired of lame parties?
         </h1>
-        <div className="description text-center">
-          <p>PartyLocate is an app for people like you.</p>
-          <p>Share your party location to friends</p>
-          <p>or others to create an awesome party</p>
+        <div
+          className="
+            description text-center
 
-          <div className="cta flex text-center mt-2">
-            <button
-              className="
-                cta-button w-1/2 px-4 py-3 mr-3
-                from-red-500 via-pink-500 to-blue-800
-                border-6
+            md:text-lg
+            lg:text-xl
+          "
+        >
+          <p> PartyLocate is an app for people like you. </p>
+          <p> Share your party location to friends </p>
+          <p> or others to create an awesome party </p>
+
+          <div
+            className="
+              cta flex text-center mt-3
+              lg:text-lg
+            "
+          >
+            <a href=""
+              className={`
+                ${styles.ctaButton}
+
+                w-1/2  mr-3
+                py-3
+                bg-black
+                bg-opacity-60
                 rounded-md
-              "
-              /**
-               * @todo border radius not working
-               */
-              style={{
-                borderImage:
-                  "linear-gradient(135deg, var(--tw-gradient-stops))",
-                borderImageSlice: "1",
-              }}
+
+                hover:bg-blue-800
+                transition
+                delay-0
+
+              `}
             >
               View the map
-            </button>
-            <button
-              className="
-              cta-button w-1/2 px-4 py-3 ml-3
-              bg-gradient-to-br from-red-500 via-pink-500 to-blue-800
-              rounded-md
-            "
+            </a>
+
+            <a href=""
+              className={`
+                ${styles.ctaButton}
+
+                w-1/2 py-3 ml-3
+                bg-pink-500
+                rounded-md
+
+                hover:bg-blue-800
+              `}
             >
               Get started
-            </button>
+            </a>
           </div>
         </div>
       </div>
-      <CustomImage
+      {/* <CustomImage
         src="/hero.jpg"
         alt="hero image"
         className={`${styles.heroimg} hidden md:block h-56`}
-      />
+      /> */}
     </div>
   );
 }

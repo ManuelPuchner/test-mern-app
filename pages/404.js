@@ -3,7 +3,6 @@ import Link from "next/link";
 import Layout from "components/Layout";
 
 function Error() {
-  
   return (
     <Layout>
       <div className="text-center mx-3">
@@ -12,15 +11,36 @@ function Error() {
         </h1>
 
         <div className="px-5">
-          <h2 className="text-base mt-8">
+          <h2
+            className="
+              text-base mt-8
+              m-auto
+              w-10/12
+
+              md:mb-4
+            "
+          >
             <span className="text-lg font-semibold">
-              The server responded with a status code of {404}{" "}
+              The server responded with a status code of {404}
             </span>
             <br />
-            This means the requested site was not found. Maybe you entered the wrong url?
+            This means the requested site was not found. Maybe you entered the
+            wrong url?
           </h2>
 
-          <div className="flex mt-6 text-left">
+          <div
+            className="
+              flex mt-6 text-left
+              m-auto
+
+              w-10/12
+
+              md:w-2/3
+              md:text-center
+
+              lg:w-1/2
+            "
+          >
             <h3 className="w-1/2 pr-8">
               If you think, something went wrong on our side, please report it
               to us {/* email wenn verfügbar einfügen */}

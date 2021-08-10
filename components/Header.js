@@ -20,6 +20,7 @@ function Header({isHomepage}) {
       select-none
       ${isHomepage ? "text-white" : null}
 
+      z-30
       md:px-6
       md:bg-gradient-to-l from-red-500 via-pink-500 to-blue-800
     `}
@@ -69,7 +70,12 @@ function Header({isHomepage}) {
         
       `}
       >
-        <div className="links text-center text-xl md:flex">
+        <div
+          className="
+            links text-center text-xl
+            md:flex md:text-base
+          "
+        >
           <NavLink href="/">Home</NavLink>
           <NavLink href="/about">About</NavLink>
           <NavLink href="/parties">Parties</NavLink>
