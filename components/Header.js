@@ -25,7 +25,7 @@ function Header({isHomepage}) {
       md:bg-gradient-to-l from-red-500 via-pink-500 to-blue-800
     `}
     >
-      <Link href="/parties">
+      <Link href="/">
         <a className="md:hidden">
           <Icon className="h-10 w-10 m-3 rounded-md bg-blue-800">
             <svg
@@ -49,8 +49,8 @@ function Header({isHomepage}) {
         </a>
       </Link>
 
-      <div className="branding text-xl self-center font-bold tracking-widest">
-        <h1>PartyLocate</h1>
+      <div className="branding text-xl self-center font-bold tracking-widest text-black">
+        <h1>Notiz app</h1>
       </div>
       <nav
         className={`
@@ -77,9 +77,6 @@ function Header({isHomepage}) {
           "
         >
           <NavLink href="/">Home</NavLink>
-          <NavLink href="/about">About</NavLink>
-          <NavLink href="/parties">Parties</NavLink>
-          <NavLink href="/friends">Friends</NavLink>
         </div>
 
         <div
