@@ -2,11 +2,11 @@ import styles from "styles/Showcase.module.css";
 function Showcase() {
   const test = async () => {
     const data = await fetch(
-      `http://localhost:3000/api/test?testprop=${"dies ist ein test"}&test=moin`
+      `${window.location.protocol}//${window.location.host}/api/test?testprop=${"dies ist ein test"}&test=moin`
     );
   };
   const test2 = async () => {
-    const data = await fetch("http://localhost:3000/api/clear");
+    const data = await fetch(`${window.location.protocol}//${window.location.host}/api/clear`);
   };
   return (
     <div
