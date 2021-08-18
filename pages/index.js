@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>PartyLocate</title>
+
       </Head>
       <Layout isHomepage>
         <Showcase />
